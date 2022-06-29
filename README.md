@@ -1,10 +1,6 @@
 ng-annotate-webpack-plugin
 ==========================
 
-ng-annotate is deprecated. Consider using https://github.com/schmod/babel-plugin-angularjs-annotate instead.
-
----
-
 WebPack plugin that runs [ng-annotate](https://github.com/olov/ng-annotate) on your bundles
 
 Based on [ngmin-webpack-plugin](https://github.com/jeffling/ngmin-webpack-plugin)
@@ -13,7 +9,7 @@ Based on [ngmin-webpack-plugin](https://github.com/jeffling/ngmin-webpack-plugin
 In webpack.config.js:
 ```javascript
 var webpack = require('webpack');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+var ngAnnotatePlugin = require('@advbet/ng-annotate-webpack-plugin');
 
 module.exports = {
     /// ... rest of config
@@ -38,7 +34,7 @@ module.exports = {
 }
 ```
 
-Since version 0.4.1: switched to maintained fork of `ng-annotate`: [ng-annotate-patched](https://github.com/bluetech/ng-annotate-patched) to benefit from its improvements.
+Since version 0.5.0: switched to maintained fork of `ng-annotate`: [ng-annotate-patched](https://github.com/bluetech/ng-annotate-patched) to benefit from its improvements.
 
 
 Since version 0.4.0: for performance reasons, chunks where the name starts with `vendors~` are not
